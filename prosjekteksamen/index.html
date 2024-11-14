@@ -3,15 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Forside</title>
 </head>
 <body>
     
     <header>
+
         <!--Søkebar-->
+        <form>
+            <label for="search-bar"></label>
+            <input type="search" placeholder="Søk her" id="search-bar">
+            <input type="submit" value="søk"> <!--Må erstatte med ikon og få denne inn i søkebar-->
+        </form>
+
         <nav>
             <ul>
-                <li> <!--"Spørsmål om linking og refreshing av nettside"-->
+                <li> 
                     <!--"Hjem"-->
                     <a href="index.html">Hjem</a>
                 </li>
@@ -37,15 +49,14 @@
 
         <nav>
             <ul>
-                <li>
-                    "Bruker"-ikon
-
+                <li> 
+                    <i class="fa-regular fa-user"></i>
                 </li>
                 <li>
-                    "Hjerte"-ikon
+                    <i class="fa-regular fa-heart"></i>
                 </li>
                 <li>
-                    <a href="checkout.html">"Handlekurv"-ikon</a>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
             </ul>
         </nav>
@@ -241,18 +252,42 @@
 
             <section> <!--Seksjon 1 - Logo/Ingress-->
                 <h3>Logo</h3> <!--"Logo"-->
-                <p>"Ingress"</p> <!--"Ingress"-->
+                <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p> <!--"Ingress"-->
             </section>
 
             <section id="contact"> <!--Seksjon 2 - Kontakt-->
                 <h3>Kontaktinformasjon</h3><!--"Kontaktinformasjon"-->
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <p>Adresse: B R A Veien 4, 1757 Halden</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <p>Telefon: 69 60 80 00</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>E-post: halden@hiof.no</p>
+                    </li>
+
+                    <li>
+                        <i class="fa-solid fa-clock"></i>
+                        <p>Åpningstider: Hverdager 07:45 - 15:30</p>
+                    </li>
+                </ul>
             </section>
 
             <section> <!--Seksjon 3 - Snarveier-->
                 <h3>Snarveier</h3><!--"Snarveier - lenker til:"-->
                     <!--"Produkter"-->
+                    <a href="#popular-products">Produkter</a>
                     <!--"Kategorier"-->
+                    <a href="#popular-categories">Kategorier</a>
                     <!--"Kontakt oss"-->
+                    <a href="#contact">Kontakt oss</a>
             </section>
 
             <section> <!--Seksjon 4 - Sosiale medier-->

@@ -1,209 +1,244 @@
 <!DOCTYPE html>
 <html lang="nb">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Produktside</title>
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
+    <link href="fontawesome/css/brands.css" rel="stylesheet" />
+    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Produktside</title>
+</head>
 
-    <body>
-        <header>
-            <!--Søkebar-->
-            <nav>
-                <ul>
-                    <li>
-                        <!--"Hjem"-->
-                        <a href="index.html">Hjem</a>
-                    </li>
-                    <li>
-                        <!--"Produkter"-->
-                        <a href="#popular-products">Produkter</a>
-                    </li>
-                    <li>
-                        <!--"Logo"-->
-                        <a href="index.html"><h1>Logo</h1></a>
-                        
-                    </li>
-                    <li>
-                        <!--"Kategorier"-->
-                        <a href="#popular-categories">Kategorier</a>
-                    </li>
-                    <li>
-                        <!--"Kontakt oss"-->
-                        <a href="#contact">Kontakt oss</a>
-                    </li>
-                </ul>
-            </nav>
-    
-            <nav>
-                <ul>
-                    <li>
-                        "Bruker"-ikon
-    
-                    </li>
-                    <li>
-                        "Hjerte"-ikon
-                    </li>
-                    <li>
-                        <a href="checkout.html">"Handlekurv"-ikon</a>
-                    </li>
-                </ul>
-            </nav>
-    
-    
-        </header>
-        <nav> <!--Brødsmulesti-->
+<body>
+    <header>
+
+        <!--Søkebar-->
+        <form>
+            <label for="search-bar"></label>
+            <input type="search" placeholder="Søk her" id="search-bar">
+            <input type="submit" value="søk"> <!--Må erstatte med ikon og få denne inn i søkebar-->
+        </form>
+
+        <nav>
             <ul>
-                <li>
-                    Hjem
+                <li> 
+                    <!--"Hjem"-->
+                    <a href="index.html">Hjem</a>
                 </li>
                 <li>
-                    Kategori
+                    <!--"Produkter"-->
+                    <a href="#popular-products">Produkter</a>
                 </li>
                 <li>
-                    Produktnavn
+                    <!--"Logo"-->
+                    <a href="index.html"><h1>Logo</h1></a>
+                    
+                </li>
+                <li>
+                    <!--"Kategorier"-->
+                    <a href="#popular-categories">Kategorier</a>
+                </li>
+                <li>
+                    <!--"Kontakt oss"-->
+                    <a href="#contact">Kontakt oss</a>
+                </li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul>
+                <li> 
+                    <i class="fa-regular fa-user"></i>
+                </li>
+                <li>
+                    <i class="fa-regular fa-heart"></i>
+                </li>
+                <li>
+                    <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
                 </li>
             </ul>
         </nav>
 
 
-        <main>
-            <section> <!--Produktbilder--> <!--Eventuelt bruke annen tag - "gallery" eller lignende-->
-                <!--4 produktbilder-->
-                <h3>Bilder</h3> <!--Eventuelt skjules (?) eller fjernes senere-->
-
-            </section>
-
-
-            <section> <!--Produktinformasjon-->
-                <h2>Produktnavn</h2>
-                <!--Lenke til produktmerke - bruk hjemmeside-->
-                <p>Pris</p>
-                <p>Farge: "Farge"</p>
-                <!--Nedtrekksmeny for valg av størrelse-->
-                <!--"Legg til i handlekurv"-knapp-->
-
-                <!--"<details>"-->
-                    <!--"Materiale og vedlikehold"-->
-                    <!--"Produktdetaljer"-->
-                    <!--"Størrelsestabell"-->
-                    <!--"Anmeldelser"-->
-            </section>
-        </main>
-
-        <aside> <!--Lignende produkter-->
-            <h2>Lignende produkter</h2>
-
-            <nav>
-                <!--Lenke: "Se flere lignende produkter"-->
-                    <!--"Pil"-ikon-->
-
-            </nav>
-            
-
-            <!--Produktkort -->
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <h4>"Produktnavn"</h4>
-                </a>
-                <p>"Pris"</p>
-                <!--Ikoner med stjerner-->
-                <!--Tekst for hvor mange anmeldelser-->
-                <!--Knapp for "Favoritt" - Hjerteikon-->
-            </article>
-        </aside>
+    </header>
+    <nav> <!--Brødsmulesti-->
+        <ul>
+            <li>
+                Hjem
+            </li>
+            <li>
+                Kategori
+            </li>
+            <li>
+                Produktnavn
+            </li>
+        </ul>
+    </nav>
 
 
-        <footer>
+    <main>
+        <section> <!--Produktbilder--> <!--Eventuelt bruke annen tag - "gallery" eller lignende-->
+            <!--4 produktbilder-->
+            <h3>Bilder</h3> <!--Eventuelt skjules (?) eller fjernes senere-->
 
-            <section> <!--Seksjon 1 - Logo/Ingress-->
-                <h3>Logo</h3> <!--"Logo"-->
-                <p>"Ingress"</p> <!--"Ingress"-->
-            </section>
+        </section>
 
-            <section id="contact"> <!--Seksjon 2 - Kontakt-->
-                <h3>Kontaktinformasjon</h3><!--"Kontaktinformasjon"-->
-            </section>
 
-            <section> <!--Seksjon 3 - Snarveier-->
-                <h3>Snarveier</h3><!--"Snarveier - lenker til:"-->
-                    <!--"Produkter"-->
-                    <!--"Kategorier"-->
-                    <!--"Kontakt oss"-->
-            </section>
+        <section> <!--Produktinformasjon-->
+            <h2>Produktnavn</h2>
+            <!--Lenke til produktmerke - bruk hjemmeside-->
+            <p>Pris</p>
+            <p>Farge: "Farge"</p>
+            <!--Nedtrekksmeny for valg av størrelse-->
+            <!--"Legg til i handlekurv"-knapp-->
 
-            <section> <!--Seksjon 4 - Sosiale medier-->
-                <h3>Sosiale medier</h3>
-                <!--"Instagram-logo"-->
-                <a target="_blank" href="https://www.instagram.com/">Instagram-ikon</a>
+            <!--"<details>"-->
+                <!--"Materiale og vedlikehold"-->
+                <!--"Produktdetaljer"-->
+                <!--"Størrelsestabell"-->
+                <!--"Anmeldelser"-->
+        </section>
+    </main>
 
-                <!--"Facebook-logo"-->
-                <a target="_blank" href="https://www.facebook.com/">FaceBook-ikon</a>
+    <aside> <!--Lignende produkter-->
+        <h2>Lignende produkter</h2>
 
-                <!--"LinkedIn-logo"-->
-                <a target="_blank" href="https://www.linkedin.com/">LinkedIn-ikon</a>
+        <nav>
+            <!--Lenke: "Se flere lignende produkter"-->
+                <!--"Pil"-ikon-->
 
-                <!--"Pinterest-logo"-->
-                <a target="_blank" href="https://www.pinterest.com/">Pinterest-ikon</a>
-            </section>
+        </nav>
+        
 
-        </footer>
+        <!--Produktkort -->
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
 
-    </body>
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
+
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
+
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
+
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
+
+        <article>
+            <a href="product.html">
+                <!--"Bilde"-->
+                <h4>"Produktnavn"</h4>
+            </a>
+            <p>"Pris"</p>
+            <!--Ikoner med stjerner-->
+            <!--Tekst for hvor mange anmeldelser-->
+            <!--Knapp for "Favoritt" - Hjerteikon-->
+        </article>
+    </aside>
+
+
+    <footer>
+
+        <section> <!--Seksjon 1 - Logo/Ingress-->
+            <h3>Logo</h3> <!--"Logo"-->
+            <p>Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p> <!--"Ingress"-->
+        </section>
+
+        <section id="contact"> <!--Seksjon 2 - Kontakt-->
+            <h3>Kontaktinformasjon</h3><!--"Kontaktinformasjon"-->
+            <ul>
+                <li>
+                    <i class="fa-solid fa-location-dot"></i>
+                    <p>Adresse: B R A Veien 4, 1757 Halden</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>Telefon: 69 60 80 00</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>E-post: halden@hiof.no</p>
+                </li>
+
+                <li>
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Åpningstider: Hverdager 07:45 - 15:30</p>
+                </li>
+            </ul>
+        </section>
+
+        <section> <!--Seksjon 3 - Snarveier-->
+            <h3>Snarveier</h3><!--"Snarveier - lenker til:"-->
+                <!--"Produkter"-->
+                <a href="#popular-products">Produkter</a>
+                <!--"Kategorier"-->
+                <a href="#popular-categories">Kategorier</a>
+                <!--"Kontakt oss"-->
+                <a href="#contact">Kontakt oss</a>
+        </section>
+
+        <section> <!--Seksjon 4 - Sosiale medier-->
+            <h3>Sosiale medier</h3>
+            <!--"Instagram-logo"-->
+            <a target="_blank" href="https://www.instagram.com/">Instagram-ikon</a>
+
+            <!--"Facebook-logo"-->
+            <a target="_blank" href="https://www.facebook.com/">FaceBook-ikon</a>
+
+            <!--"LinkedIn-logo"-->
+            <a target="_blank" href="https://www.linkedin.com/">LinkedIn-ikon</a>
+
+            <!--"Pinterest-logo"-->
+            <a target="_blank" href="https://www.pinterest.com/">Pinterest-ikon</a>
+        </section>
+
+    </footer>
+
+</body>
     </html>
