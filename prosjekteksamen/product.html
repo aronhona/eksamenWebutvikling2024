@@ -67,9 +67,11 @@
         <ul>
             <li>
                 Hjem
+                <i class="fa-solid fa-greater-than"></i>
             </li>
             <li>
                 Kategori
+                <i class="fa-solid fa-greater-than"></i>
             </li>
             <li>
                 Produktnavn
@@ -83,22 +85,90 @@
             <!--4 produktbilder-->
             <h3>Bilder</h3> <!--Eventuelt skjules (?) eller fjernes senere-->
 
+            <picture> 
+                <source media="(min-width:600px)" srcset="img/dame_kjole_svart_1_1280.jpg">
+                <img src="img/dame_kjole_svart_1_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
+            </picture>
+
+            <picture> 
+                <source media="(min-width:600px)" srcset="img/dame_kjole_svart_2_1280.jpg">
+                <img src="img/dame_kjole_svart_2_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
+            </picture>
+
+            <picture> 
+                <source media="(min-width:600px)" srcset="img/dame_kjole_svart_3_1280.jpg">
+                <img src="img/dame_kjole_svart_3_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
+            </picture>
+
+            <picture> 
+                <source media="(min-width:600px)" srcset="img/dame_kjole_svart_4_1280.jpg">
+                <img src="img/dame_kjole_svart_4_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
+            </picture>
+            
+
         </section>
 
 
         <section> <!--Produktinformasjon-->
-            <h2>Produktnavn</h2>
+            <h2>Classic Kjole</h2>
             <!--Lenke til produktmerke - bruk hjemmeside-->
-            <p>Pris</p>
-            <p>Farge: "Farge"</p>
+            <a href="https://www.ginatricot.com/no">Gina Tricot</a>
+            <p>kr 1349,00</p>
+            <p>Farge: Svart</p>
+
             <!--Nedtrekksmeny for valg av størrelse-->
+            <label for="size">Velg en størrelse</label>
+            <select name="size" id="Size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="Large">Large</option>
+                <option value="extra-large">Extra Large</option>
+              </select>
+
             <!--"Legg til i handlekurv"-knapp-->
+            <button>Legg til i handlekurv</button>
 
             <!--"<details>"-->
                 <!--"Materiale og vedlikehold"-->
+                <details>
+                    <summary>Materiale og vedlikehold</summary>
+                    <p>
+                        <ul>
+                            <li>Materiale: 95% viskose, 5% elastan</li>
+                            <li>Vaskeråd: Maskinvask 30 grader</li>
+                        </ul>
+                    </p>
+                  </details>
+
                 <!--"Produktdetaljer"-->
+                <details>
+                    <summary>Produktdetaljer</summary>
+                    <p>Medium lang tekstilkjole med stropper. Kjolen er svart, og har vanlig passform.</p>
+                  </details>
+
                 <!--"Størrelsestabell"-->
+                <details>
+                    <summary>Størrelsestabell</summary>
+                    <p>
+                        <table>
+
+                        </table>
+
+                    </p>
+                  </details>
+
                 <!--"Anmeldelser"-->
+                <details>
+                    <summary>Anmeldelser</summary>
+                    <p>
+                        <ul>
+                            <li>Bruker1</li>
+                            <li>2024-10-02</li>
+                            <li>Stjerneikoner</li>
+                            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                        </ul>
+                    </p>
+                  </details>
         </section>
     </main>
 
@@ -107,7 +177,11 @@
 
         <nav>
             <!--Lenke: "Se flere lignende produkter"-->
-                <!--"Pil"-ikon-->
+            <a href="#popular-products">
+                Se flere lignende produkter 
+                <i class="fa-solid fa-greater-than"></i>
+            </a>
+                
 
         </nav>
         
@@ -116,9 +190,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                    <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
+                </picture>
+                
+                <h4>"Basic" T-skjorte Dame</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 349,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -127,9 +206,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/dame_tskjorte_hvit_print_1280.jpg">
+                    <img src="img/dame_tskjorte_hvit_print_640.jpg" alt="Bilde av 'Print' t-skjorte i fargen hvit, for dame">
+                </picture>
+                
+                <h4>"Print" T-skjorte Dame</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 399,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -138,9 +222,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/mann_genser_svart_1280.jpg">
+                    <img src="img/mann_genser_svart_640.jpg" alt="Bilde av 'Basic' genser i fargen svart, for mann">
+                </picture>
+                
+                <h4>"Basic" Genser Mann</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 1199,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -149,9 +238,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
+                    <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
+                </picture>
+                
+                <h4>"Print 1" T-skjorte Mann</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 399,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -160,9 +254,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/mann_tskjorte_print2_svart_1280.jpg">
+                    <img src="img/mann_tskjorte_print2_svart_640.jpg" alt="Bilde av 'Print 2' t-skjorte i fargen svart, for mann">
+                </picture>
+                
+                <h4>"Print 2" T-skjorte Mann</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 399,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -171,9 +270,14 @@
         <article>
             <a href="product.html">
                 <!--"Bilde"-->
-                <h4>"Produktnavn"</h4>
+                <picture> 
+                    <source media="(min-width:600px)" srcset="img/mann_tskjorte_print3_hvit_rod_1280.jpg">
+                    <img src="img/mann_tskjorte_print3_hvit_rod_640.jpg" alt="Bilde av 'Print 3' t-skjorte i fargen hvit og rød, for mann">
+                </picture>
+                
+                <h4>"Print 3" T-skjorte Mann</h4>
             </a>
-            <p>"Pris"</p>
+            <p>kr 399,00</p>
             <!--Ikoner med stjerner-->
             <!--Tekst for hvor mange anmeldelser-->
             <!--Knapp for "Favoritt" - Hjerteikon-->
