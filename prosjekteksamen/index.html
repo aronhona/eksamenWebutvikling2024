@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="fontawesome/css/fontawesome.css" rel="stylesheet" />
-    <link href="fontawesome/css/brands.css" rel="stylesheet" />
-    <link href="fontawesome/css/solid.css" rel="stylesheet" />
+    <link href="fontawesome/css/fontawesome.css" rel="stylesheet">
+    <link href="fontawesome/css/brands.css" rel="stylesheet">
+    <link href="fontawesome/css/solid.css" rel="stylesheet">
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Forside</title>
@@ -51,12 +51,15 @@
             <ul>
                 <li> 
                     <i class="fa-regular fa-user"></i>
+                    <span>Bruker</span>
                 </li>
                 <li>
                     <i class="fa-regular fa-heart"></i>
+                    <span>Favoritter</span>
                 </li>
                 <li>
                     <a href="checkout.html"><i class="fa-solid fa-cart-shopping"></i></a>
+                    <span>Handlekurv</span>
                 </li>
             </ul>
         </nav>
@@ -72,15 +75,21 @@
                 <h2>Banner</h2> <!--Skjules senere?-->
 
                 <article> <!--"Banner 1"-->
-                    <h2>Banner-overskrift 1</h2>
+                    <h2>Lorem ipsum dolor sit amet</h2>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
+                    <button>Les mer</button>
                 </article>
 
                 <article> <!--"Banner 2"-->
-                    <h2>Banner-overskrift 2</h2>
+                    <h2>Sed ut perspiciatis unde omnis iste natus error</h2>
+                    <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <button>Les mer</button>
                 </article>
 
                 <article> <!--"Banner 3"-->
-                    <h2>Banner-overskrift 3</h2>
+                    <h2>Excepteur sint occaecat cupidatat non proident</h2>
+                    <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
+                    <button>Les mer</button>
                 </article>
             </section>
 
@@ -88,12 +97,16 @@
             <section id="popular-products"> <!--Seksjon 2 - "Våre mest populære produkter"-->
                 <header>
                     <h2>Våre mest populære produkter</h2>
-                    <p>"Ingress"</p>
+                    <p>Et harum quidem rerum facilis est et expedita distinctio.</p>
 
                     <!--Tre statiske knapper:-->
+                    
                         <!--"Nytt produkt"-->
+                        <button>Nytt produkt</button>
                         <!--"Tilbud"-->
+                        <button>Tilbud</button>
                         <!--"Bestselgere"-->
+                        <button>Bestselgere</button>
                 </header>
 
 
@@ -101,9 +114,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
+                        </picture>
+                        
+                        <h4>"Basic" T-skjorte Dame</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 349,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -112,9 +130,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_hvit_print_1280.jpg">
+                            <img src="img/dame_tskjorte_hvit_print_640.jpg" alt="Bilde av 'Print' t-skjorte i fargen hvit, for dame">
+                        </picture>
+                        
+                        <h4>"Print" T-skjorte Dame</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 399,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -123,9 +146,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_genser_svart_1280.jpg">
+                            <img src="img/mann_genser_svart_640.jpg" alt="Bilde av 'Basic' genser i fargen svart, for mann">
+                        </picture>
+                        
+                        <h4>"Basic" Genser Mann</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 1199,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -134,9 +162,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
+                            <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
+                        </picture>
+                        
+                        <h4>"Print 1" T-skjorte Mann</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 399,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -145,9 +178,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print2_svart_1280.jpg">
+                            <img src="img/mann_tskjorte_print2_svart_640.jpg" alt="Bilde av 'Print 2' t-skjorte i fargen svart, for mann">
+                        </picture>
+                        
+                        <h4>"Print 2" T-skjorte Mann</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 399,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
@@ -156,9 +194,14 @@
                 <article>
                     <a href="product.html">
                         <!--"Bilde"-->
-                        <h4>"Produktnavn"</h4>
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print3_hvit_rod_1280.jpg">
+                            <img src="img/mann_tskjorte_print3_hvit_rod_640.jpg" alt="Bilde av 'Print 3' t-skjorte i fargen hvit og rød, for mann">
+                        </picture>
+                        
+                        <h4>"Print 3" T-skjorte Mann</h4>
                     </a>
-                    <p>"Pris"</p>
+                    <p>kr 399,00</p>
                     <!--Ikoner med stjerner-->
                     <!--Tekst for hvor mange anmeldelser-->
                     <!--Knapp for "Favoritt" - Hjerteikon-->
