@@ -5,11 +5,27 @@
 :root{
     --textBlack: rgb(0,0,0);
     --textGrey: rgb(59, 59, 59);
+    --textWhite: rgb(255, 255, 255);
+
+}
+
+
+#flexbox-main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1rem;
+    
+
+}
+
+h2{
+    font-size: 2rem;
 }
 
 #head-global{
@@ -17,6 +33,7 @@ body{
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+
 
     margin: 1rem;
 }
@@ -28,31 +45,104 @@ body{
     flex-direction: column;
     align-items: center;
 
-    padding: 1rem;
-    gap: 1rem;
+    padding: 0;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    gap: 0.5rem;
     
+    li{
+        margin: 0.5rem;
+    }
 
 
     a{
         color: var(--textBlack);
         text-decoration: none;
+        padding: 0.5rem;
     }
     
+    h1{
+        margin: 0.5rem;
+    }
 }
 
 #head-nav-icons{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
+    padding: 0;
 
     list-style: none;
     gap: 0.5rem;
 }
 
 
+#banner-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.banner{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background-image: url("https://picsum.photos/id/399/600/800");
+    background-size: cover;
+    background-position: center;
+
+    margin: 1rem;
+    border-radius: 10px;
+    min-height: 30rem;
+    
+    h3, p, button{
+        margin: 2rem;
+        max-width: 50%;
+    }
+
+    h3{
+        font-size: 2rem;
+        text-align: right;
+    }
+
+    p{
+        text-align: right;
+    }
+
+    button{
+        border-radius: 30px;
+        border-style: none;
+        background-color: white;
+        padding: 1rem;
+    }
+    
+}
+
+.banner-desktop{
+    margin: 0;
+    display: none;
+    
+}
 
 
 
+.button{
+    border-color: black;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 30px;
+    padding: 0.75rem;
+}
+
+.button-black{
+    background-color: black;
+    color: var(--textWhite);
+}
+
+.button-white{
+    background-color: white;
+}
 
 
 
@@ -75,5 +165,10 @@ body{
 
 @media only screen and (max-width: 1200px) and (min-width: 600px){
 
+    .banner-desktop{
+        margin: 1rem;
+        display: revert; 
+        
+    }
 
 }

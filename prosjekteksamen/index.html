@@ -13,83 +13,84 @@
     </head>
 <body>
     
-    <header id="head-global">
+    <div id="flexbox-main">
+        <header id="head-global">
 
-        <!--Søkebar-->
-        <form>
-            <label for="search-bar"></label>
-            <input type="search" placeholder="Søk her" id="search-bar">
-            <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-        </form>
+            <!--Søkebar-->
+            <form>
+                <label for="search-bar"></label>
+                <input type="search" placeholder="Søk her" id="search-bar">
+                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+            </form>
 
-        <nav>
-            <ul id="head-nav">
-                <li> 
-                    <!--"Hjem"-->
-                    <a href="index.html">Hjem</a>
-                </li>
-                <li>
-                    <!--"Produkter"-->
-                    <a href="#popular-products">Produkter</a>
-                </li>
-                <li>
-                    <!--"Logo"-->
-                    <a href="index.html"><h1>Logo</h1></a>
-                    
-                </li>
-                <li>
-                    <!--"Kategorier"-->
-                    <a href="#popular-categories">Kategorier</a> 
-                </li>
-                <li>
-                    <!--"Kontakt oss"-->
-                    <a href="#contact">Kontakt oss</a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul id="head-nav">
+                    <li> 
+                        <!--"Hjem"-->
+                        <a href="index.html">Hjem</a>
+                    </li>
+                    <li>
+                        <!--"Produkter"-->
+                        <a href="#popular-products">Produkter</a>
+                    </li>
+                    <li>
+                        <!--"Logo"-->
+                        <a href="index.html"><h1>Logo</h1></a>
+                        
+                    </li>
+                    <li>
+                        <!--"Kategorier"-->
+                        <a href="#popular-categories">Kategorier</a> 
+                    </li>
+                    <li>
+                        <!--"Kontakt oss"-->
+                        <a href="#contact">Kontakt oss</a>
+                    </li>
+                </ul>
+            </nav>
 
-        <nav>
-            <ul id="head-nav-icons">
-                <li> 
-                    <i class="fa-regular fa-user"></i>
-                </li>
-                <li>
-                    <i class="fa-regular fa-heart"></i>
-                </li>
-                <li>
-                    <a href="checkout.html">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                    </a>
-                </li>
-            </ul>
-        </nav>
+            <nav>
+                <ul id="head-nav-icons">
+                    <li> 
+                        <i class="fa-regular fa-user"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
+                    <li>
+                        <a href="checkout.html">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
 
 
-    </header>
+        </header>
     
     
-    <div>
+
         <main>
 
-            <section> <!--Seksjon 1 - "Banner"-->
+            <section id="banner-flex"> <!--Seksjon 1 - "Banner"-->
                 <h2>Banner</h2> <!--Skjules senere?-->
 
 
                 <!--Bytte ut '<button>' med '<a>?'-->
-                <article> <!--"Banner 1"-->
-                    <h2>Lorem ipsum dolor sit amet</h2>
+                <article class="banner"> <!--"Banner 1"-->
+                    <h3>Lorem ipsum dolor sit amet</h3>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. </p>
                     <button>Les mer</button>
                 </article>
 
-                <article> <!--"Banner 2"-->
-                    <h2>Sed ut perspiciatis unde omnis iste natus error</h2>
+                <article class="banner banner-desktop"> <!--"Banner 2"-->
+                    <h3>Sed ut perspiciatis unde omnis iste natus error</h3>
                     <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
                     <button>Les mer</button>
                 </article>
 
-                <article> <!--"Banner 3"-->
-                    <h2>Excepteur sint occaecat cupidatat non proident</h2>
+                <article class="banner banner-desktop"> <!--"Banner 3"-->
+                    <h3>Excepteur sint occaecat cupidatat non proident</h3>
                     <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus.</p>
                     <button>Les mer</button>
                 </article>
@@ -104,11 +105,11 @@
                     <!--Tre statiske knapper:-->
                     
                         <!--"Nytt produkt"-->
-                        <button>Nytt produkt</button>
+                        <button class="button button-black">Nytt produkt</button>
                         <!--"Tilbud"-->
-                        <button>Tilbud</button>
+                        <button class="button button-white">Tilbud</button>
                         <!--"Bestselgere"-->
-                        <button>Bestselgere</button>
+                        <button class="button button-white">Bestselgere</button>
                 </header>
 
 
@@ -124,16 +125,16 @@
                         <h4>"Basic" T-skjorte Dame</h4>
                     </a>
                     <p>kr 349,00</p>
-            <!--Ikoner med stjerner-->
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        <!--Tekst for hvor mange anmeldelser-->
-        <p>842 Reviews</p>
-        <!--Knapp for "Favoritt" - Hjerteikon-->
-        <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
 
                 <article>
@@ -147,16 +148,16 @@
                         <h4>"Print" T-skjorte Dame</h4>
                     </a>
                     <p>kr 399,00</p>
-            <!--Ikoner med stjerner-->
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        <!--Tekst for hvor mange anmeldelser-->
-        <p>842 Reviews</p>
-        <!--Knapp for "Favoritt" - Hjerteikon-->
-        <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
 
                 <article>
@@ -170,16 +171,16 @@
                         <h4>"Basic" Genser Mann</h4>
                     </a>
                     <p>kr 1199,00</p>
-               <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
 
                 <article>
@@ -193,16 +194,16 @@
                         <h4>"Print 1" T-skjorte Mann</h4>
                     </a>
                     <p>kr 399,00</p>
-            <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
 
                 <article>
@@ -216,16 +217,16 @@
                         <h4>"Print 2" T-skjorte Mann</h4>
                     </a>
                     <p>kr 399,00</p>
-            <!--Ikoner med stjerner-->
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        <!--Tekst for hvor mange anmeldelser-->
-        <p>842 Reviews</p>
-        <!--Knapp for "Favoritt" - Hjerteikon-->
-        <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
 
                 <article>
@@ -239,16 +240,16 @@
                         <h4>"Print 3" T-skjorte Mann</h4>
                     </a>
                     <p>kr 399,00</p>
-            <!--Ikoner med stjerner-->
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-solid fa-star"></i>
-            <i class="fa-regular fa-star"></i>
-        <!--Tekst for hvor mange anmeldelser-->
-        <p>842 Reviews</p>
-        <!--Knapp for "Favoritt" - Hjerteikon-->
-        <i class="fa-regular fa-heart"></i> 
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p>842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <i class="fa-regular fa-heart"></i> 
                 </article>
             </section>
 
@@ -359,10 +360,7 @@
             </section>
 
         </main>
-        <aside>
 
-
-        </aside>
         <footer>
 
             <section> <!--Seksjon 1 - Logo/Ingress-->
