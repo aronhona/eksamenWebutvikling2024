@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
 	box-sizing: border-box;
 }
@@ -13,7 +15,7 @@
 
 
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Roboto", Arial, sans-serif;
     font-size: 1rem;
     
 
@@ -79,6 +81,7 @@ h2{
 #head-nav{
     list-style: none;
     text-align: center;
+    padding: 0;
     
     li{
         margin: 0.5rem;
@@ -101,11 +104,14 @@ h2{
     padding: 0;
     display: flex;
     flex-wrap: nowrap;
-    justify-content: space-between;
+    gap: 1rem;
     
  
 }
 
+#h2-banner{
+    display: none;
+}
 
 .banner{
     background-image: url("https://picsum.photos/id/399/600/800");
@@ -115,6 +121,14 @@ h2{
     margin: 1rem;
     border-radius: 10px;
     min-height: 30rem;
+
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+
     
     h3, p, button{
         margin: 2rem;
@@ -145,7 +159,80 @@ h2{
     
 }
 
+picture{
+    max-width: 600px;
+    width:100%;
 
+    img{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+
+#popular-products{
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+
+    header{
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-bottom: 1rem;
+        
+    }
+
+    article{
+        margin: 1rem 0;
+        display: flex;
+        flex-wrap: wrap;
+
+        position: relative;
+
+        a{
+            text-decoration: none;
+            color: var(--textBlack);
+
+
+            h4{
+                width: 50%;
+            }
+        }
+
+        .product-price{
+  
+        }
+
+        button{
+            position:absolute;
+            top: 0.5rem;
+            right: 0.5rem;
+
+            border-radius: 100px;
+            border-style: none;
+  
+            width: 40px;
+            height: 40px;
+            
+            i{
+                color: var(--textWhite);
+            }
+        }
+      
+
+    }
+
+
+}
+
+#pop-prod-btn{
+    width: 80%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
 
 .button{
     border-color: black;
@@ -166,14 +253,10 @@ h2{
 
 
 
-picture{
-    max-width: 600px;
-    width:100%;
-    
-    img{
-        width: 100%;
-    }
-}
+
+
+
+
 
 
 
@@ -194,7 +277,12 @@ picture{
 
     .banner-desktop{
         margin: 1rem;
-        display: revert; 
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right; 
         
     }
 
