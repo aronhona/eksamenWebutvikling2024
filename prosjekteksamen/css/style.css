@@ -188,21 +188,30 @@ picture{
         margin: 1rem 0;
         display: flex;
         flex-wrap: wrap;
-
+        align-items: center;
         position: relative;
+        
 
         a{
             text-decoration: none;
             color: var(--textBlack);
+        }
 
-
-            h4{
-                width: 50%;
-            }
+        .product-name{
+            flex-basis: 50%;
         }
 
         .product-price{
-  
+            flex-basis: 50%;
+            text-align: right;
+        }
+
+        i{
+            margin: 0 0.3rem;
+        }
+
+        .product-review{
+            font-weight: 700;
         }
 
         button{
@@ -252,7 +261,80 @@ picture{
 }
 
 
+#popular-categories{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(7, 20rem);
+    row-gap: 1rem;
+    
+    margin: 1rem;
 
+    header{
+        grid-column: 1/2;
+        grid-row: 1/2;
+
+
+        margin-bottom: 1rem;
+    }
+
+    article{
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        background-size: cover;
+        background-position: center; 
+        border-radius: 20px;
+
+        text-align: center;
+        color: var(--textWhite);
+
+        h3{
+            font-size: 1.5rem;
+        }
+
+    }
+
+
+
+    #cat-dame{
+        grid-column: 1/2;
+        grid-row: 2/3;
+         
+        background-image: url("https://picsum.photos/id/550/600/800?blur=2");
+  
+    }
+
+    #cat-herre{
+        grid-column: 1/2;
+        grid-row: 3/4;
+
+        background-image: url("https://picsum.photos/id/22/600/800?blur=2");
+    }
+
+    #cat-basic{
+        grid-column: 1/2;
+        grid-row: 4/6;
+
+        background-image: url("https://picsum.photos/id/338/600/800?blur=2");
+    }
+
+    #cat-print{
+        grid-column: 1/2;
+        grid-row: 6/7;
+
+        background-image: url("https://picsum.photos/id/30/600/800?blur=2");
+    }
+
+    #cat-kjoler{
+        grid-column: 1/2;
+        grid-row: 7/8;
+
+        background-image: url("https://picsum.photos/id/325/600/800?blur=2");
+    }
+}
 
 
 
