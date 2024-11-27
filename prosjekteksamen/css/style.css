@@ -264,7 +264,7 @@ picture{
 #popular-categories{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(7, 20rem);
+    grid-template-rows: auto repeat(6, 15rem);
     row-gap: 1rem;
     
     margin: 1rem;
@@ -337,7 +337,36 @@ picture{
 }
 
 
+#reviews{
+    margin: 1rem;
 
+    h2{
+        flex-basis: 100%;
+    }
+
+    article{
+        border-style: solid;
+        border-color: grey;
+        border-width: 1px;
+        border-radius: 20px;
+
+        width: 289px;
+        padding: 1rem;
+        margin: 0.5rem 0;
+
+        img{
+            border-radius: 100px;
+            height: 100px;
+            width: 100px;
+        }
+    }
+}
+
+#review-slider{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+}
 
 
 
