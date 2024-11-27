@@ -85,26 +85,26 @@
                 </ul>
             </nav>
 
-            <section> <!--Produktbilder--> <!--Eventuelt bruke annen tag - "gallery" eller lignende-->
+            <section id="product-gallery"> <!--Produktbilder--> <!--Eventuelt bruke annen tag - "gallery" eller lignende-->
                 <!--4 produktbilder-->
-                <h3>Bilder</h3> <!--Eventuelt skjules (?) eller fjernes senere-->
+                <h3 class="sr-only">Produktbilder</h3> <!--Eventuelt skjules (?) eller fjernes senere-->
 
-                <picture> 
+                <picture id="main-pic" class="produktside-bilde"> 
                     <source media="(min-width:600px)" srcset="img/dame_kjole_svart_1_1280.jpg">
                     <img src="img/dame_kjole_svart_1_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
                 </picture>
 
-                <picture> 
+                <picture id="small-pic-1" class="produktside-bilde"> 
                     <source media="(min-width:600px)" srcset="img/dame_kjole_svart_2_1280.jpg">
                     <img src="img/dame_kjole_svart_2_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
                 </picture>
 
-                <picture> 
+                <picture id="small-pic-2" class="produktside-bilde"> 
                     <source media="(min-width:600px)" srcset="img/dame_kjole_svart_3_1280.jpg">
                     <img src="img/dame_kjole_svart_3_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
                 </picture>
 
-                <picture> 
+                <picture id="small-pic-3" class="produktside-bilde"> 
                     <source media="(min-width:600px)" srcset="img/dame_kjole_svart_4_1280.jpg">
                     <img src="img/dame_kjole_svart_4_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
                 </picture>
@@ -113,16 +113,17 @@
             </section>
 
 
-            <section> <!--Produktinformasjon-->
-                <h2>Classic Kjole</h2>
+            <section id="product-info"> <!--Produktinformasjon-->
+                <h2 class="flex-basis-full">Classic Kjole</h2>
                 <!--Lenke til produktmerke - bruk hjemmeside-->
-                <a target="_blank" href="https://www.ginatricot.com/no" >Gina Tricot</a>
-                <p>kr 1349,00</p>
-                <p>Farge: Svart</p>
+                <a class="flex-basis-full" target="_blank" href="https://www.ginatricot.com/no" >Gina Tricot</a>
+                <p class="flex-basis-full">kr 1349,00</p>
+                <p class="flex-basis-full">Farge: Svart</p>
 
                 <!--Nedtrekksmeny for valg av størrelse-->
-                <label for="size">Velg størrelse</label>
-                <select name="size" id="size">
+                <label for="size"></label>
+                <select class="flex-basis-full padding-btn" name="size" id="size">
+                    <option value="">Velg en størrelse</option> <!--Placeholder-->
                     <option value="extra-small">Extra Small</option>
                     <option value="small">Small</option>
                     <option value="medium">Medium</option>
@@ -131,168 +132,182 @@
                 </select>
 
                 <!--"Legg til i handlekurv"-knapp-->
-                <button>Legg til i handlekurv</button>
+                <button id="handlekurv-btn" class="padding-btn">Legg til i handlekurv</button>
+
+                <!--"Favoritter"-knapp-->
+                <button id="favoritter-btn" class="padding-btn">
+                    <i class="fa-regular fa-heart"></i> 
+                </button>
 
                 <!--"<details>"-->
-                    <!--"Materiale og vedlikehold"-->
-                    <details>
-                        <summary>Materiale og vedlikehold</summary>
-                        <ul>
-                            <li>Materiale: 95% viskose, 5% elastan</li>
-                            <li>Vaskeråd: Maskinvask 30 grader</li>
-                        </ul>
-                    </details>
+                <!--"Materiale og vedlikehold"-->
+                <details class="flex-basis-full">
+                    <summary>Materiale og vedlikehold</summary>
+                    <ul>
+                        <li>Materiale: 95% viskose, 5% elastan</li>
+                        <li>Vaskeråd: Maskinvask 30 grader</li>
+                    </ul>
+                </details>
 
-                    <!--"Produktdetaljer"-->
-                    <details>
-                        <summary>Produktdetaljer</summary>
-                        <p>Medium lang tekstilkjole med stropper. Kjolen er svart, og har vanlig passform.</p>
-                    </details>
+                <!--"Produktdetaljer"-->
+                <details class="flex-basis-full">
+                    <summary>Produktdetaljer</summary>
+                    <p>Medium lang tekstilkjole med stropper. Kjolen er svart, og har vanlig passform.</p>
+                </details>
 
-                    <!--"Størrelsestabell"-->
-                    <details>
-                        <summary>Størrelsestabell</summary>
-                        <p>Sjekk hvordan din vanlige størrelse konverter til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.</p>
-                        <table>
-                            <thead>
-                                <tr>
-                                    <th>EU</th>
-                                    <th>INT</th>
-                                    <th>BRYSTVIDDE</th>
-                                    <th>LIVVIDDE</th>
-                                    <th>HOFTEMÅL</th>
-                                </tr>
-                            </thead>
+                <!--"Størrelsestabell"-->
+                <details class="flex-basis-full">
+                    <summary>Størrelsestabell</summary>
+                    <p>Sjekk hvordan din vanlige størrelse konverter til andre størrelser i vår størrelsesguide. Husk at dette kun er en generell guide og at størrelsene kan variere i forhold til merke og modell.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>EU</th>
+                                <th>INT</th>
+                                <th>BRYSTVIDDE</th>
+                                <th>LIVVIDDE</th>
+                                <th>HOFTEMÅL</th>
+                            </tr>
+                        </thead>
 
-                            <tbody>
-                                <tr>
-                                    <td>32</td>
-                                    <td>XXS</td>
-                                    <td>76</td>
-                                    <td>63</td>
-                                    <td>85</td>                              
-                                </tr>
-                                <tr>
-                                    <td>34</td>
-                                    <td>XS</td>
-                                    <td>80</td>
-                                    <td>66</td>
-                                    <td>89</td>                              
-                                </tr>
-                                <tr>
-                                    <td>36</td>
-                                    <td>S</td>
-                                    <td>84</td>
-                                    <td>69</td>
-                                    <td>93</td>                              
-                                </tr>
-                                <tr>
-                                    <td>38</td>
-                                    <td>M</td>
-                                    <td>88</td>
-                                    <td>72</td>
-                                    <td>97</td>                              
-                                </tr>
-                                <tr>
-                                    <td>40</td>
-                                    <td>L</td>
-                                    <td>92</td>
-                                    <td>76</td>
-                                    <td>100</td>                              
-                                </tr>
-                                <tr>
-                                    <td>42</td>
-                                    <td>XL</td>
-                                    <td>96</td>
-                                    <td>80</td>
-                                    <td>103</td>                              
-                                </tr>
-                                <tr>
-                                    <td>44</td>
-                                    <td>XXL</td>
-                                    <td>100</td>
-                                    <td>85</td>
-                                    <td>106</td>                              
-                                </tr>
-                                <tr>
-                                    <td>46</td>
-                                    <td>3XL</td>
-                                    <td>104</td>
-                                    <td>90</td>
-                                    <td>109</td>                              
-                                </tr>
-                                <tr>
-                                    <td>48</td>
-                                    <td>4XL</td>
-                                    <td>110</td>
-                                    <td>96.5</td>
-                                    <td>114</td>                              
-                                </tr>
-                                <tr>
-                                    <td>50</td>
-                                    <td>5XL</td>
-                                    <td>116</td>
-                                    <td>103</td>
-                                    <td>119</td>                              
-                                </tr>
-                                <tr>
-                                    <td>52</td>
-                                    <td>6XL</td>
-                                    <td>122</td>
-                                    <td>109.5</td>
-                                    <td>124</td>                              
-                                </tr>
-                                <tr>
-                                    <td>54</td>
-                                    <td>7XL</td>
-                                    <td>128</td>
-                                    <td>116</td>
-                                    <td>130</td>                              
-                                </tr>
-                                <tr>
-                                    <td>56</td>
-                                    <td>8XL</td>
-                                    <td>134</td>
-                                    <td>122.5</td>
-                                    <td>136</td>                              
-                                </tr>
-                                <tr>
-                                    <td>58</td>
-                                    <td>9XL</td>
-                                    <td>140</td>
-                                    <td>129</td>
-                                    <td>142</td>                              
-                                </tr>
-                                <tr>
-                                    <td>60</td>
-                                    <td>10XL</td>
-                                    <td>146</td>
-                                    <td>135.5</td>
-                                    <td>148</td>                              
-                                </tr>
+                        <tbody>
+                            <tr>
+                                <td>32</td>
+                                <td>XXS</td>
+                                <td>76</td>
+                                <td>63</td>
+                                <td>85</td>                              
+                            </tr>
+                            <tr>
+                                <td>34</td>
+                                <td>XS</td>
+                                <td>80</td>
+                                <td>66</td>
+                                <td>89</td>                              
+                            </tr>
+                            <tr>
+                                <td>36</td>
+                                <td>S</td>
+                                <td>84</td>
+                                <td>69</td>
+                                <td>93</td>                              
+                            </tr>
+                            <tr>
+                                <td>38</td>
+                                <td>M</td>
+                                <td>88</td>
+                                <td>72</td>
+                                <td>97</td>                              
+                            </tr>
+                            <tr>
+                                <td>40</td>
+                                <td>L</td>
+                                <td>92</td>
+                                <td>76</td>
+                                <td>100</td>                              
+                            </tr>
+                            <tr>
+                                <td>42</td>
+                                <td>XL</td>
+                                <td>96</td>
+                                <td>80</td>
+                                <td>103</td>                              
+                            </tr>
+                            <tr>
+                                <td>44</td>
+                                <td>XXL</td>
+                                <td>100</td>
+                                <td>85</td>
+                                <td>106</td>                              
+                            </tr>
+                            <tr>
+                                <td>46</td>
+                                <td>3XL</td>
+                                <td>104</td>
+                                <td>90</td>
+                                <td>109</td>                              
+                            </tr>
+                            <tr>
+                                <td>48</td>
+                                <td>4XL</td>
+                                <td>110</td>
+                                <td>96.5</td>
+                                <td>114</td>                              
+                            </tr>
+                            <tr>
+                                <td>50</td>
+                                <td>5XL</td>
+                                <td>116</td>
+                                <td>103</td>
+                                <td>119</td>                              
+                            </tr>
+                            <tr>
+                                <td>52</td>
+                                <td>6XL</td>
+                                <td>122</td>
+                                <td>109.5</td>
+                                <td>124</td>                              
+                            </tr>
+                            <tr>
+                                <td>54</td>
+                                <td>7XL</td>
+                                <td>128</td>
+                                <td>116</td>
+                                <td>130</td>                              
+                            </tr>
+                            <tr>
+                                <td>56</td>
+                                <td>8XL</td>
+                                <td>134</td>
+                                <td>122.5</td>
+                                <td>136</td>                              
+                            </tr>
+                            <tr>
+                                <td>58</td>
+                                <td>9XL</td>
+                                <td>140</td>
+                                <td>129</td>
+                                <td>142</td>                              
+                            </tr>
+                            <tr>
+                                <td>60</td>
+                                <td>10XL</td>
+                                <td>146</td>
+                                <td>135.5</td>
+                                <td>148</td>                              
+                            </tr>
 
-                            </tbody>
-                        </table>
-                    </details>
+                        </tbody>
+                    </table>
+                </details>
 
-                    <!--"Anmeldelser"-->
-                    <details id="details-anmeldelser">
-                        <summary>Anmeldelser  **Stjerneikoner**</summary>
-                        
-                        <ul>
-                            <li>Bruker1</li>
-                            <li>2024-10-02</li>
-                            <li>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-solid fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                                <i class="fa-regular fa-star"></i>
-                            </li>
-                            <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
-                        </ul>
+                <!--"Anmeldelser"-->
+                <details id="details-anmeldelser" class="flex-basis-full">
+                    <summary>Anmeldelser  
+                        <div id="details-stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <p>32</p>
+                        </div>
+                    </summary>
                     
-                    </details>
+                    <ul>
+                        <li>Bruker1</li>
+                        <li>2024-10-02</li>
+                        <li>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </li>
+                        <li>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</li>
+                    </ul>
+                
+                </details>
             </section>
         </main>
 
@@ -311,146 +326,166 @@
             
 
             <!--Produktkort -->
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
-                        <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
-                    </picture>
-                    
-                    <h4>"Basic" T-skjorte Dame</h4>
-                </a>
-                <p>kr 349,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+            <div class="slider">
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Basic" T-skjorte Dame</h4>
+                    </a>
+                    <p class="product-price">kr 349,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
 
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
-                        <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
-                    </picture>
-                    
-                    <h4>"Basic" T-skjorte Dame</h4>
-                </a>
-                <p>kr 349,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Basic" T-skjorte Dame</h4>
+                    </a>
+                    <p class="product-price">kr 349,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
 
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
-                        <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
-                    </picture>
-                    
-                    <h4>"Basic" T-skjorte Dame</h4>
-                </a>
-                <p>kr 349,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Basic" T-skjorte Dame</h4>
+                    </a>
+                    <p class="product-price">kr 349,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
 
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
-                        <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
-                    </picture>
-                    
-                    <h4>"Print 1" T-skjorte Mann</h4>
-                </a>
-                <p>kr 399,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
+                            <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Print 1" T-skjorte Mann</h4>
+                    </a>
+                    <p class="product-price">kr 399,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
 
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
-                        <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
-                    </picture>
-                    
-                    <h4>"Print 1" T-skjorte Mann</h4>
-                </a>
-                <p>kr 399,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
+                            <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Print 1" T-skjorte Mann</h4>
+                    </a>
+                    <p class="product-price">kr 399,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
 
-            <article>
-                <a href="product.html">
-                    <!--"Bilde"-->
-                    <picture> 
-                        <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
-                        <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
-                    </picture>
-                    
-                    <h4>"Print 1" T-skjorte Mann</h4>
-                </a>
-                <p>kr 399,00</p>
-                <!--Ikoner med stjerner-->
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-solid fa-star"></i>
-                <i class="fa-regular fa-star"></i>
-            <!--Tekst for hvor mange anmeldelser-->
-            <p>842 Reviews</p>
-            <!--Knapp for "Favoritt" - Hjerteikon-->
-            <i class="fa-regular fa-heart"></i> 
-            </article>
+                <article>
+                    <a href="product.html">
+                        <!--"Bilde"-->
+                        <picture> 
+                            <source media="(min-width:600px)" srcset="img/mann_tskjorte_print1_blå_640.jpg">
+                            <img src="img/mann_tskjorte_print1_blå_640.jpg" alt="Bilde av 'Print 1' t-skjorte i fargen blå, for mann">
+                        </picture>
+                    </a>
+                    <a href="product.html" class="product-name">
+                        <h4>"Print 1" T-skjorte Mann</h4>
+                    </a>
+                    <p class="product-price">kr 399,00</p>
+                    <!--Ikoner med stjerner-->
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <!--Tekst for hvor mange anmeldelser-->
+                    <p class="product-review">842 Reviews</p>
+                    <!--Knapp for "Favoritt" - Hjerteikon-->
+                    <button>
+                        <i class="fa-regular fa-heart"></i> 
+                    </button>
+                </article>
+            </div>
         </aside>
 
-        <footer id="footer-product">
+        <footer id="footer-product" class="footer">
 
             <section id="footer-logo"> <!--Seksjon 1 - Logo/Ingress-->
                 <h3>Logo</h3> <!--"Logo"-->
