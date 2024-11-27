@@ -68,31 +68,35 @@
 
         </header>
 
-        <main class="main-global">
-            <nav>
+        <main class="main-global" id="main-checkout">
+            <nav id="checkout-link">
                 <!--Lenke: "Fortsett og handle"-->
-                <a href="product.html">Fortsett og handle</a>
+                <a href="product.html"> <i class="fa-solid fa-arrow-left"></i> Fortsett og handle</a>
             </nav>
 
             <h2>Kasse</h2>
 
-            <section> <!--Seksjon 1 - "Shoppingbag"-->
+            <section id="shoppingbag"> <!--Seksjon 1 - "Shoppingbag"-->
                 <h2>1. Shoppingbagen din</h2>
 
                 <!--Produktkort-->
-                <article>
-                    <a href="product.html">
+                <article class="shoppingbag-card">
+                    <a href="product.html" class="flex-basis-full">
                         <!--Produktbilde-->
                         <picture> 
-                            <source media="(min-width:600px)" srcset="img/dame_kjole_svart_1_1280.jpg">
-                            <img src="img/dame_kjole_svart_1_640.jpg" alt="Bilde av 'Classic' kjole i fargen svart, for dame">
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
                         </picture>
-                        <h3>Classic Kjole</h3>
+                        
                     </a>
-                    <p>kr 1349,00</p>
-                    <p>Farge: Svart</p>
+                    <a href="product.html" class="flex-basis-full">
+                        <h3>"Basic" T-skjorte Dame</h3>
+                    </a>
+                    <p class="flex-basis-full">kr 349,00</p>
+                    <p class="flex-basis-full">Farge: Svart</p>
                     <!--Størrelse med nedtrekksmeny for valg av str-->
-                    <label>
+                    <label class="flex-basis-half check-size">
+                        Størrelse
                         <select name="size">
                             <option value="extra-small">XS</option>
                             <option value="small">S</option>
@@ -102,7 +106,7 @@
                         </select>
                     </label>
                     <!--Antall: Valg av antall av produkt - se bilde-->
-                    <form>
+                    <form class="flex-basis-half check-quant">
                         <label>
                             Antall
                             <input type="number" name="quantity" min="1" max="99" placeholder="1">
@@ -115,19 +119,23 @@
                         <i class="fa-solid fa-trash"></i>
                 </article>
 
-                <article>
-                    <a href="product.html">
+                <article class="shoppingbag-card">
+                    <a href="product.html" class="flex-basis-full">
                         <!--Produktbilde-->
                         <picture> 
                             <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
                             <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
                         </picture>
+                        
+                    </a>
+                    <a href="product.html">
                         <h3>"Basic" T-skjorte Dame</h3>
                     </a>
                     <p>kr 349,00</p>
                     <p>Farge: Svart</p>
                     <!--Størrelse med nedtrekksmeny for valg av str-->
                     <label>
+                        Størrelse
                         <select name="size">
                             <option value="extra-small">XS</option>
                             <option value="small">S</option>
@@ -150,18 +158,23 @@
                         <i class="fa-solid fa-trash"></i>
                 </article>
 
-                <article>
-                    <a href="product.html">
+                <article class="shoppingbag-card">
+                    <a href="product.html" class="flex-basis-full">
+                        <!--Produktbilde-->
                         <picture> 
-                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_hvit_print_640.jpg">
-                            <img src="img/dame_tskjorte_hvit_print_640.jpg" alt="Bilde av 'Print' t-skjorte i fargen hvit, for dame">
+                            <source media="(min-width:600px)" srcset="img/dame_tskjorte_svart_1280.jpg">
+                            <img src="img/dame_tskjorte_svart_640.jpg" alt="Bilde av 'Basic' t-skjorte i fargen svart, for dame">
                         </picture>
-                        <h3>"Print" T-skjorte Dame</h3>
+                        
                     </a>
-                <p>kr 399,00</p>
-                <p>Farge: Svart</p>
+                    <a href="product.html">
+                        <h3>"Basic" T-skjorte Dame</h3>
+                    </a>
+                    <p>kr 349,00</p>
+                    <p>Farge: Svart</p>
                     <!--Størrelse med nedtrekksmeny for valg av str-->
                     <label>
+                        Størrelse
                         <select name="size">
                             <option value="extra-small">XS</option>
                             <option value="small">S</option>
@@ -184,7 +197,6 @@
                         <i class="fa-solid fa-trash"></i>
                 </article>
             </section>
-
 
             <section> <!--Seksjon 2 Skjema-->
                 <form action="#">
