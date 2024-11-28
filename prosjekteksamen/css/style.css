@@ -993,11 +993,16 @@ fieldset{
 
     }
 
+    #main-pic{
+        img{
+            height: 100%;
+        }
+    }
     .produktside-bilde{
 
         img{
             border-radius: 0px;
-            height: 40%;
+            height: 350px;
             object-fit: cover;
         }
     }
@@ -1006,4 +1011,16 @@ fieldset{
         flex-basis: 35%;
     }
 
+    #favoritter-btn{
+        width: 10%;
+    }
+
+    .shoppingbag-card{
+
+        justify-content: space-between;
+    }
+
+    .flex-basis-full{
+        flex-basis: 0;
+    }
 }
