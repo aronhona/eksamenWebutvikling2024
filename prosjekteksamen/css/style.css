@@ -640,9 +640,10 @@ aside{
     }   
 }
 
-#shoppingbag{
+.check-section{
     border: 1px solid rgb(223, 222, 222);
     padding: 1.5rem;
+    margin-bottom: 1rem;
 }
 
 .shoppingbag-card{
@@ -653,6 +654,10 @@ aside{
         margin-top: 1rem;
         text-decoration: none;
         color: var(--textBlack);
+
+        h3{
+            margin: 0 0 0 2rem;
+        }
         picture{
 
             img{
@@ -663,20 +668,144 @@ aside{
             
         }
     }
+
     p{
         margin: 0 0 0 2rem;
+    }
+
+    i{
+        margin-top: 1rem;
     }
 }
 
 .check-size{
-    flex-basis: 50%;
+    flex-basis: 40%;
     margin: 1rem 0 1rem 2rem;
+
+    select{
+        padding: 0.7rem;
+        border-style: none;
+    }
 
 }
 
 .check-quant{
+    flex-basis: 50%;
+    margin: 1rem 0;
+
+    label{
+        input{
+            padding: 0.7rem;
+        }
+    }
 
 }
+
+.heart-indent{
+    margin: 1rem 1rem 1rem 2rem;
+}
+
+
+fieldset{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    border-style: none;
+    padding: 0;
+
+    input{
+        padding: 0.5rem;
+    }
+}
+
+#dine-opplysninger{
+    text-align: center;
+
+    fieldset{
+        text-align: start;
+        margin: 2rem 0; 
+    }
+
+    button{
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border-style: none;
+    }
+
+    a{
+        padding: 0.5rem;
+    }
+
+}
+
+
+#levering{
+    legend{
+        font-weight: 700;
+    }
+
+    label{
+        
+        border: 1px solid rgb(223, 222, 222);
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+}
+
+.font-bold{
+    font-weight: 700;
+}
+
+.font-grey{
+    color: var(--textGrey);
+}
+
+.font-big{
+    font-size: 1.5rem;
+}
+
+.display-block{
+    display: block;
+}
+
+.margin-top{
+    margin-top: 1rem;
+}
+
+.margin-bottom{
+    margin-bottom: 1rem;
+}
+
+
+#betaling{
+    text-align: center;
+
+    h2{
+        text-align: start;
+    }
+
+    fieldset{
+        text-align: start;
+        margin: 2rem 0; 
+    }
+
+    button{
+        width: 100%;
+        padding: 0.5rem;
+        margin: 1rem 0;
+        border-style: none;
+    }
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -689,6 +818,7 @@ aside{
     flex-direction: column;
     margin: 1rem;
     gap: 1rem;
+    border-top: 1px solid grey;
 
     #footer-logo{
 
@@ -730,17 +860,9 @@ aside{
 
 
 
+/* MEDIA QUERIES*/
 
-
-
-@media only screen and (min-width: 600px){
-
-
-}
-
-
-
-@media only screen and (max-width: 1400px) and (min-width: 600px){
+@media only screen and (max-width: 1200px) and (min-width: 600px){
 
     .banner-desktop{
         margin: 1rem;
@@ -752,5 +874,10 @@ aside{
         text-align: right; 
         
     }
+
+}
+
+@media only screen and (min-width: 1200px){
+
 
 }

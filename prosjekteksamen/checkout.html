@@ -76,7 +76,8 @@
 
             <h2>Kasse</h2>
 
-            <section id="shoppingbag"> <!--Seksjon 1 - "Shoppingbag"-->
+            <!--Seksjon 1 - "Shoppingbag"-->
+            <section class="check-section"> 
                 <h2>1. Shoppingbagen din</h2>
 
                 <!--Produktkort-->
@@ -114,7 +115,7 @@
                     </form>
                     <!--Ikoner-->
                         <!--"Hjerte"-ikon-->
-                        <i class="fa-regular fa-heart"></i> 
+                        <i class="fa-regular fa-heart heart-indent"></i> 
                         <!--"Søppelbøtte"-ikon-->
                         <i class="fa-solid fa-trash"></i>
                 </article>
@@ -128,13 +129,13 @@
                         </picture>
                         
                     </a>
-                    <a href="product.html">
+                    <a href="product.html" class="flex-basis-full">
                         <h3>"Basic" T-skjorte Dame</h3>
                     </a>
-                    <p>kr 349,00</p>
-                    <p>Farge: Svart</p>
+                    <p class="flex-basis-full">kr 349,00</p>
+                    <p class="flex-basis-full">Farge: Svart</p>
                     <!--Størrelse med nedtrekksmeny for valg av str-->
-                    <label>
+                    <label class="flex-basis-half check-size">
                         Størrelse
                         <select name="size">
                             <option value="extra-small">XS</option>
@@ -145,7 +146,7 @@
                         </select>
                     </label>
                     <!--Antall: Valg av antall av produkt - se bilde-->
-                    <form>
+                    <form class="flex-basis-half check-quant">
                         <label>
                             Antall
                             <input type="number" name="quantity" min="1" max="99" placeholder="1">
@@ -153,7 +154,7 @@
                     </form>
                     <!--Ikoner-->
                         <!--"Hjerte"-ikon-->
-                        <i class="fa-regular fa-heart"></i> 
+                        <i class="fa-regular fa-heart heart-indent"></i> 
                         <!--"Søppelbøtte"-ikon-->
                         <i class="fa-solid fa-trash"></i>
                 </article>
@@ -167,13 +168,13 @@
                         </picture>
                         
                     </a>
-                    <a href="product.html">
+                    <a href="product.html" class="flex-basis-full">
                         <h3>"Basic" T-skjorte Dame</h3>
                     </a>
-                    <p>kr 349,00</p>
-                    <p>Farge: Svart</p>
+                    <p class="flex-basis-full">kr 349,00</p>
+                    <p class="flex-basis-full">Farge: Svart</p>
                     <!--Størrelse med nedtrekksmeny for valg av str-->
-                    <label>
+                    <label class="flex-basis-half check-size">
                         Størrelse
                         <select name="size">
                             <option value="extra-small">XS</option>
@@ -184,7 +185,7 @@
                         </select>
                     </label>
                     <!--Antall: Valg av antall av produkt - se bilde-->
-                    <form>
+                    <form class="flex-basis-half check-quant">
                         <label>
                             Antall
                             <input type="number" name="quantity" min="1" max="99" placeholder="1">
@@ -192,15 +193,15 @@
                     </form>
                     <!--Ikoner-->
                         <!--"Hjerte"-ikon-->
-                        <i class="fa-regular fa-heart"></i> 
+                        <i class="fa-regular fa-heart heart-indent"></i> 
                         <!--"Søppelbøtte"-ikon-->
                         <i class="fa-solid fa-trash"></i>
                 </article>
             </section>
 
-            <section> <!--Seksjon 2 Skjema-->
-                <form action="#">
-                        
+             <!--Seksjon 2 Skjema-->
+            <form action="#">
+                <section id="dine-opplysninger" class="check-section">   
                     <!--"Dine opplysninger"-->
                     <h2>2. Dine opplysninger</h2>
 
@@ -216,7 +217,7 @@
                         <label for="gateadresse">Gateadresse</label>
                         <input type="text" name="adresse" id="gateadresse" placeholder="B R A veien 4*" required>
 
-                        <label for="postnummer">Postnummer</label>|
+                        <label for="postnummer">Postnummer</label>
                         <input type="text" name="postnr" id="postnummer" placeholder="1752*" pattern="[0-9]{4}" required>
 
                         <label for="poststed">Poststed</label>
@@ -235,50 +236,58 @@
                     </fieldset>              
                     
                     <!--"Lagre"-knapp-->
-                    <button>Lagre</button>
+                    <button class="button-black">Lagre</button>
                     <!--"Avbryt"-lenke-->
                     <a href="product.html">Avbryt</a>
+                </section> 
 
                 <!--"Levering"-->
+                <section id="levering" class="check-section">
                     <h2>3. Levering</h2>
 
                     <fieldset>
                         <legend>Leveringsvalg</legend>
                         <!--"Express Hjemlevering"-->
-                        <label for="xpress-hjem">Express Hjemlevering</label>
-                        <input type="radio" name="leveringsvalg" id="xpress-hjem" value="Express Hjemlevering" required>
-                            <p>
-                                59 kr
+                        <label>
+                            <input type="radio" name="leveringsvalg" id="xpress-hjem" value="Express Hjemlevering" required>
+                            <span class="font-bold">Express Hjemlevering</span>    
+                            <p class="font-bold font-grey">3 - 4 Virkedager</p>
+                            <p>59 kr
                                 <i class="fa-solid fa-truck"></i>
                             </p>
-                            <p>3 - 4 Virkedager</p>
                             <p>Bestill hverdager før 08:00* for levering neste arbeidsdag. For levering til postnummer 4000-7999 er leveringstiden 2 arbeidsdager. </p>
-                        <!--"Express Pakke til utleveringssted"-->
-                        <label for="xpress-utlevering">Express Pakke til utleveringssted</label>
-                        <input type="radio" name="leveringsvalg" id="xpress-utlevering" value="Express Pakke til utleveringssted">
-                            <p>
-                                59 kr
+                        </label>
+
+                            <!--"Express Pakke til utleveringssted"-->
+                        <label>
+                            <input type="radio" name="leveringsvalg" id="xpress-utlevering" value="Express Pakke til utleveringssted">
+                            <span class="font-bold">Express Pakke til utleveringssted</span>
+                            <p class="font-bold font-grey">1 - 3 Virkedager</p>
+                            <p>59 kr
                                 <i class="fa-brands fa-dhl"></i>
                             </p>
-                            <p>1 - 3 Virkedager</p>
-                            <p>"Utdypende leveringsinformasjon"</p>
+                            <p>Leveres til nærmeste utleveringsted i hverdager mellom 08:00 - 16:00.</p>
+                        </label>
+
                         <!--"Standard Hjemlevering"-->
-                        <label for="std-hjem">Standard Hjemlevering</label>
-                        <input type="radio" name="leveringsvalg" id="std-hjem" value="Standard Hjemlevering">
-                            <p>
-                                Gratis
+                        <label>
+                            <input type="radio" name="leveringsvalg" id="std-hjem" value="Standard Hjemlevering">
+                            <span class="font-bold">Standard Hjemlevering</span>
+                            <p class="font-bold font-grey">5 - 8 Virkedager</p>
+                            <p>Gratis
                                 <i class="fa-solid fa-box"></i>
                             </p>
-                            <p>5 - 8 Virkedager</p>
                             <p>Leveres hjem til deg før frokost mandag til lørdag innen 4-7 hverdager.</p>
+                        </label>
                     </fieldset>
-
-                
-                    <!--"Betaling"-->
+                </section>
+            
+                <!--"Betaling"-->
+                <section id="betaling" class="check-section">
                     <h2>4. Betaling</h2>
 
                     <fieldset>
-                        <legend>
+                        <legend class="font-bold">
                             Betal med kort
                             <i class="fa-solid fa-credit-card"></i>
                         </legend>
@@ -293,18 +302,24 @@
                     </fieldset>
 
                     <p>Å betale inkl. mva</p>
-                    <p>1 199 kr</p>
+                    <p class="font-bold font-big">1 199 kr</p>
                     <!--"Fullfør kjøp"-knapp-->
-                    <button type="submit">Fullfør kjøp</button>
+                    <button class="button-black" type="submit">Fullfør kjøp</button>
+                    
                     <!--Samtykke-tekst og avkrysningsbokser-->
-                    <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
-                    <label for="nyhetsbrev">Ja takk! Send nyhetsbrev til meg.</label>
-                    <input type="checkbox" name="nyhetsbrev" id="nyhetsbrev">
-                    <label for="tilbud-sms">Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.</label>
-                    <input type="checkbox" name="tilbud-sms" id="tilbud-sms">
-                
-                </form>
-            </section>
+                    <p class="margin-bottom">Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                    <label class="display-block margin-top">
+                        <input type="checkbox" name="nyhetsbrev" id="nyhetsbrev">
+                        Ja takk! Send nyhetsbrev til meg.
+                    </label>
+                    
+                    <label class="display-block margin-bottom">
+                        <input type="checkbox" name="tilbud-sms" id="tilbud-sms">
+                        Jeg ønsker å motta tekstmeldinger med tilbud og nyheter.
+                    </label>
+                </section>
+            </form>
+            
         </main>
 
         <footer class="footer">
