@@ -586,6 +586,10 @@ aside{
     display: flex;
     flex-wrap: wrap;
 
+    h2{
+        flex-basis: 100%;
+    }
+
     article{
         margin: 1rem 0;
         display: flex;
@@ -878,6 +882,17 @@ fieldset{
 }
 
 @media only screen and (min-width: 1200px){
+
+    .banner-desktop{
+        margin: 1rem;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: flex-end;
+        align-items: flex-end;
+        text-align: right; 
+        
+    }
 
 
 }
