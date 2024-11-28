@@ -31,13 +31,15 @@ body{
 }
 
 #grid-container{
-    max-width: 1200px;
-    width: 100%;
     display: grid;
     column-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    
+    justify-items: center;
+
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem;
 }
 
 #grid-container-product{
@@ -53,8 +55,7 @@ body{
 .header-global{
     grid-column: 1/2;
     grid-row: 1/2;
-    width: 100%;
-    margin: 1rem 0;
+    max-width: 100%;
 
     display: flex;
     flex-direction: column;
@@ -85,21 +86,26 @@ body{
 .main-global{
     grid-column: 1/2;
     grid-row: 2/3;
+    max-width: 100%;
+
 }
 
 .footer{
     grid-column: 1/2;
     grid-row: 3/4;
+    max-width: 100%;
 }
 
 #aside{
     grid-column: 1/2;
     grid-row: 3/4;
+    max-width: 100%;
 }
 
 #footer-product{
     grid-column: 1/2;
     grid-row: 4/5;
+    max-width: 100%;
 }
 
 
@@ -151,6 +157,7 @@ h2{
     background-size: cover;
     background-position: center;
 
+    width: 100%;
     margin: 1rem;
     border-radius: 10px;
     min-height: 30rem;
@@ -190,23 +197,25 @@ h2{
 }
 
 picture{
-    max-width: 600px;
-    width:100%;
 
     img{
-        width: 100%;
+
         border-radius: 20px;
     }
 }
 
 #popular-products{
-    margin: 1rem;
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    max-width: 100%;
+    
 
     header{
+        flex: 0 1 100%;
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -215,6 +224,7 @@ picture{
     }
 
     article{
+        flex: 0 1 100%;
         margin: 1rem 0;
         display: flex;
         flex-wrap: wrap;
@@ -222,6 +232,7 @@ picture{
         position: relative;
         
         a{
+            width: 100%;
             text-decoration: none;
             color: var(--textBlack);
         }
@@ -289,6 +300,7 @@ picture{
 
 
 #popular-categories{
+    max-width: 100%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto repeat(6, 15rem);
@@ -817,6 +829,7 @@ fieldset{
 
 /* Footer */
 .footer{
+    max-width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
