@@ -748,13 +748,12 @@ fieldset{
     legend{
         font-weight: 700;
     }
+}
 
-    label{
-        
-        border: 1px solid rgb(223, 222, 222);
-        padding: 1rem;
-        margin: 0.5rem 0;
-    }
+.levering-border{
+    border: 1px solid rgb(223, 222, 222);
+    padding: 1rem;
+    margin: 0.5rem 0;
 }
 
 .font-bold{
@@ -1146,6 +1145,16 @@ fieldset{
     #poststed{
         grid-column: 2/3;
         grid-row: 7/8;
+    }
+
+    .levering-relative{
+        position: relative;
+    }
+
+    .levering-pris-logo{
+        position: absolute;
+        top: 0px;
+        right: 15px;
     }
 
 
