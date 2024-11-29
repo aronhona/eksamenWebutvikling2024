@@ -37,7 +37,7 @@ body{
     column-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
-    
+    margin: auto;
 }
 
 #grid-container-product{
@@ -47,6 +47,7 @@ body{
     column-gap: 10px;
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto auto;
+    margin: auto;
 
 }
 
@@ -106,6 +107,12 @@ body{
 h2{
     font-size: 2rem;
 }
+
+
+
+
+
+
 
 
 /* index.html */
@@ -190,6 +197,7 @@ h2{
 }
 
 picture{
+    min-width: 0;
     max-width: 600px;
     width:100%;
 
@@ -406,6 +414,12 @@ picture{
     overflow: scroll;
     
 }
+
+
+
+
+
+
 
 
 /* product.html */
@@ -626,6 +640,9 @@ aside{
 
 
 
+
+
+
 /* Checkout-side */
 
 #main-checkout{
@@ -807,13 +824,6 @@ fieldset{
 
 
 
-
-
-
-
-
-
-
 /* Footer */
 .footer{
     display: flex;
@@ -863,9 +873,28 @@ fieldset{
 
 
 
+
+
+
+
+
+
+
+
+
+
 /* MEDIA QUERIES*/
 
 @media only screen and (max-width: 1200px) and (min-width: 600px){
+
+    #head-nav{
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+
+
 
     .banner-desktop{
         margin: 1rem;
@@ -877,6 +906,12 @@ fieldset{
         text-align: right; 
         
     }
+
+    .banner{
+        min-width: 100%;
+    }
+
+
 
 }
 
@@ -988,7 +1023,7 @@ fieldset{
     }
 
     #product-gallery{
-        flex-basis: 60%;
+        flex-basis: 55%;
 
     }
 
@@ -1155,6 +1190,13 @@ fieldset{
         position: absolute;
         top: 0px;
         right: 15px;
+    }
+
+    #desktop-slider{
+        display: flex;
+        flex-wrap: nowrap;
+        width: 1200px;
+        overflow-x: scroll;
     }
 
 
